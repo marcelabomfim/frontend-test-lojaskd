@@ -1,0 +1,19 @@
+{
+  "name": "frontend-test",
+  "description": "",
+  "authors": [
+    "Marcela Bomfim"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-route": "^1.6.2"
+  }
+}

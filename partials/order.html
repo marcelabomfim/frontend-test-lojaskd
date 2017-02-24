@@ -1,0 +1,337 @@
+<section class="order">
+    <header class="header">
+        <div class="header__left">
+            <h1 class="header__title">Acompanhar pedido</h1>
+            <a class="header__subtitle" href="https://www.lojaskd.com.br" target="_blank" title="LojasKD">
+                LojasKD.com.br
+            </a>
+        </div>
+
+        <div class="header__right">
+            <div class="menu_toggle visible-xs" ng-click="showMenu()">
+                <span></span>
+            </div>
+            <div class="menu_wrap" ng-class="menuOpen?'open':''" ng-click="showMenu()">
+                <ul class="menu">
+                    <li class="menu__item menu__item--title visible-xs">
+                        <span class="menu__link">
+                            No site da LojasKD:
+                        </span>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="https://www.lojaskd.com.br/login.php" target="_blank" title="Faça seu Login/Cadastro na LojasKD">
+                            Login/Cadastro <i class="icon-open-in-new"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="https://www.lojaskd.com.br/atendimento" target="_blank" title="Central de Atendimento LojasKD">
+                            Atendimento <i class="icon-open-in-new"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="https://www.lojaskd.com.br/ambientes-e-moveis-em-promocao/" target="_blank" title="Promoções na LojasKD">
+                            Promoções <i class="icon-open-in-new"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--last">
+                        <a class="menu__link" href="#!/logout" title="Sair/Acompanhar outro pedido">
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <div class="row">
+
+        <div class="col-sm-5 col-md-3">
+            <div class="box box--bordered">
+                <h1 class="box__title">Detalhes do Pedido</h1>
+                <div class="order_info">
+                    <p class="order_info__title">Status atual</p>
+                    <p class="order_info__value status--ok">Acompanhando seus móveis</p>
+                </div>
+                <div class="order_info">
+                    <p class="order_info__title">Nº do pedido</p>
+                    <p class="order_info__value">11225589</p>
+                </div>
+                <div class="order_info">
+                    <p class="order_info__title">Produtos</p>
+                    <div class="order_info__value expandable">
+                        <input type="checkbox" id="produtos_detalhe">
+                        <label class="expandable__toggle" for="produtos_detalhe">12 <i class="icon-arrow-drop-down"></i></label>
+                        <div class="expandable__content expandable__content--boxed">
+                            <p>1 item enviado p/ fábrica</p>
+                            <p>5 itens em produção</p>
+                            <p>3 itens com a transportadora</p>
+                            <p>3 itens entregues</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order_info">
+                    <p class="order_info__title">Data do pedido</p>
+                    <p class="order_info__value">09/01/2017</p>
+                </div>
+                <div class="order_info">
+                    <p class="order_info__title">Valor total</p>
+                    <p class="order_info__value">R$ 1.850,00</p>
+                </div>
+                <div class="order_info">
+                    <p class="order_info__title">Forma de pagamento</p>
+                    <p class="order_info__value">Cartão de crédito Mastercard</p>
+                </div>
+                <div class="order_info">
+                    <p class="order_info__title">Prazo de entrega</p>
+                    <p class="order_info__value">00/00/20000 a 00/00/0000</p>
+                </div>
+                <div class="order_info">
+                    <p class="order_info__title">Endereço de entrega</p>
+                    <p class="order_info__value">Avenida Marechal Mário Guedes, 40 Apto 192 Jaguaré<br>05348010 SÃO PAULO - SP</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-7 col-md-4 column_2">
+            <div class="box box--bordered">
+                <h1 class="box__title">Andamento do Pedido</h1>
+                <div class="order_progress order_progress--from_passed">
+                    <p class="order_progress__date">19 jan 2017</p>
+                    <span class="order_progress__icon order_progress__icon--passed"><i class="icon-done"></i></span>
+                    <div class="order_progress__description expandable">
+                        <input type="checkbox" id="status_novo" ng-model="status_novo">
+                        <label class="expandable__toggle" for="status_novo">Novo <i class="icon-{{status_novo?'info':'info-outline'}}"></i></label>
+                        <div class="expandable__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order_progress order_progress--from_active">
+                    <p class="order_progress__date">23 dez 2016</p>
+                    <span class="order_progress__icon order_progress__icon--passed"><i class="icon-done"></i></span>
+                    <div class="order_progress__description expandable">
+                        <input type="checkbox" id="status_aprovado" ng-model="status_aprovado">
+                        <label class="expandable__toggle" for="status_aprovado">Aprovado <i class="icon-{{status_aprovado?'info':'info-outline'}}"></i></label>
+                        <div class="expandable__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order_progress">
+                    <p class="order_progress__date">20 dez 2016</p>
+                    <span class="order_progress__icon order_progress__icon--active"><i class="icon-timer"></i></span>
+                    <div class="order_progress__description expandable">
+                        <input type="checkbox" id="status_acompanhando" ng-model="status_acompanhando">
+                        <label class="expandable__toggle" for="status_acompanhando">Acompanhando seus móveis <i class="icon-{{status_acompanhando?'info':'info-outline'}}"></i></label>
+                        <div class="expandable__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order_progress">
+                    <p class="order_progress__date">19 jan 2017</p>
+                    <span class="order_progress__icon order_progress__icon--closed"></span>
+                    <div class="order_progress__description expandable">
+                        <input type="checkbox" id="status_recebimento" ng-model="status_recebimento">
+                        <label class="expandable__toggle" for="status_recebimento">Recebimento <i class="icon-{{status_recebimento?'info':'info-outline'}}"></i></label>
+                        <div class="expandable__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert">
+                <div class="alert__icon">
+                    <i class="icon-chat-bubble-outline"></i>
+                </div>
+                <div class="alert__message">
+                    <p>Acompanhamos cada detalhe da produção até a entrega de cada um dos seus móveis. Quer ver? Confira!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-md-5">
+            <div class="box box--bordered">
+                <h1 class="box__title">Produtos</h1>
+
+                <div class="order_product">
+                    <div class="order_product__image">
+                        <img src="dist/images/produto.jpg" alt="Nome do produto">
+                    </div>
+                    <div class="order_product__header">
+                        <p class="order_product__header__name">Nome do produto em duas linhas ou máximo e três quatro cinco seis sete oito noove dez bla bla bla</p>
+                        <span class="order_product__header__cod">Cód. 18993</span>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="order_product__description">
+                        <p>
+                            <span class="order_info__title">Quantidade: </span>
+                            <span class="order_info__value">1</span>
+                        </p>
+                        <p>
+                            <span class="order_info__title">Preço total: </span>
+                            <span class="order_info__value">R$ 385,90</span>
+                        </p>
+                        <p>
+                            <span class="order_info__title">Nota Fiscal: </span>
+                            <span class="order_info__value">
+                                <a class="link" href="#" title="Fazer o download da nota fiscal">Download disponível</a>
+                            </span>
+                        </p>
+                        <div class="expandable">
+                            <input type="checkbox" id="status_produto_1" ng-model="status_produto_1">
+                            <label class="expandable__toggle" for="status_produto_1">
+                                <p>
+                                    <span class="order_info__title">Status atual: </span>
+                                    <span class="order_info__value status--ok">Com a transportadora</span>
+                                    <i class="icon-{{status_produto_1?'info':'info-outline'}}"></i>
+                                </p>
+                            </label>
+                            <div class="expandable__content">
+                                <div class="order_product__status">
+                                    <div class="order_product__status__stage">
+                                        <input type="radio" id="status_produto_1_building" value="building" ng-model="status_produto_1_status">
+                                        <label for="status_produto_1_building" class="order_product__status__icon order_product__status__icon--passed {{status_produto_1_status=='building'?'open':''}}">
+                                            <i class="icon-factory-building"></i>
+                                        </label>
+                                    </div>
+                                    <div class="order_product__status__stage">
+                                        <input type="radio" id="status_produto_1_producing" value="producing" ng-model="status_produto_1_status">
+                                        <label for="status_produto_1_producing" class="order_product__status__icon order_product__status__icon--active {{status_produto_1_status=='producing'?'open':''}}">
+                                            <i class="icon-archive-black-box"></i>
+                                        </label>
+                                    </div>
+                                    <div class="order_product__status__stage">
+                                        <input type="radio" id="status_produto_1_shipping" value="shipping" ng-model="status_produto_1_status" disabled>
+                                        <label for="status_produto_1_shipping" class="order_product__status__icon {{status_produto_1_status=='shipping'?'open':''}}">
+                                            <i class="icon-local-shipping"></i>
+                                        </label>
+                                    </div>
+                                    <div class="order_product__status__stage">
+                                        <input type="radio" id="status_produto_1_done" value="done" ng-model="status_produto_1_status" disabled>
+                                        <label for="status_produto_1_done" class="order_product__status__icon {{status_produto_1_status=='done'?'open':''}}">
+                                            <i class="icon-done"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="order_product__status_description" ng-hide="status_produto_1_status!='building'">
+                                    <p class="order_product__status_description__title">Produzindo</p>
+                                    <p class="order_product__status_description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="order_product__status_description" ng-hide="status_produto_1_status!='producing'">
+                                    <p class="order_product__status_description__title">Produzido</p>
+                                    <p class="order_product__status_description__text">Para sua seguran  ttça, estamos confirmando seu pagamento. Precisa de ajuda para escolher cor, material, acertar as dimensões corretas e resolver qualquer outra <a class="link" href="#">dúvida</a>? Conte com a <strong>nossa equipe de atendimento</strong>.</p>
+                                </div>
+                                <div class="order_product__status_description" ng-hide="status_produto_1_status!='shipping'">
+                                    <p class="order_product__status_description__title">Enviando</p>
+                                    <p class="order_product__status_description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="order_product__status_description" ng-hide="status_produto_1_status!='done'">
+                                    <p class="order_product__status_description__title">Finalizado</p>
+                                    <p class="order_product__status_description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order_product">
+                    <div class="order_product__image">
+                        <img src="dist/images/produto.jpg" alt="Nome do produto">
+                    </div>
+                    <div class="order_product__header">
+                        <p class="order_product__header__name">Nome do produto em duas linhas ou máximo e três quatro cinco seis sete oito noove dez bla bla bla</p>
+                        <span class="order_product__header__cod">Cód. 18993</span>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="order_product__description">
+                        <p>
+                            <span class="order_info__title">Quantidade: </span>
+                            <span class="order_info__value">1</span>
+                        </p>
+                        <p>
+                            <span class="order_info__title">Preço total: </span>
+                            <span class="order_info__value">R$ 385,90</span>
+                        </p>
+                        <p>
+                            <span class="order_info__title">Nota Fiscal: </span>
+                            <span class="order_info__value">
+                                <a class="link" href="#" title="Fazer o download da nota fiscal">Download disponível</a>
+                            </span>
+                        </p>
+                        <div class="expandable">
+                            <input type="checkbox" id="status_produto_2" ng-model="status_produto_2">
+                            <label class="expandable__toggle" for="status_produto_2">
+                                <p>
+                                    <span class="order_info__title">Status atual: </span>
+                                    <span class="order_info__value status--ok">Com a transportadora</span>
+                                    <i class="icon-{{status_produto_2?'info':'info-outline'}}"></i>
+                                </p>
+                            </label>
+                            <div class="expandable__content">
+                                <div class="order_product__status">
+                                    <div class="order_product__status__stage">
+                                        <input type="radio" id="status_produto_2_building" value="building" ng-model="status_produto_2_status">
+                                        <label for="status_produto_2_building" class="order_product__status__icon order_product__status__icon--passed {{status_produto_2_status=='building'?'open':''}}">
+                                            <i class="icon-factory-building"></i>
+                                        </label>
+                                    </div>
+                                    <div class="order_product__status__stage">
+                                        <input type="radio" id="status_produto_2_producing" value="producing" ng-model="status_produto_2_status">
+                                        <label for="status_produto_2_producing" class="order_product__status__icon order_product__status__icon--active {{status_produto_2_status=='producing'?'open':''}}">
+                                            <i class="icon-archive-black-box"></i>
+                                        </label>
+                                    </div>
+                                    <div class="order_product__status__stage">
+                                        <input type="radio" id="status_produto_2_shipping" value="shipping" ng-model="status_produto_2_status" disabled>
+                                        <label for="status_produto_2_shipping" class="order_product__status__icon {{status_produto_2_status=='shipping'?'open':''}}">
+                                            <i class="icon-local-shipping"></i>
+                                        </label>
+                                    </div>
+                                    <div class="order_product__status__stage">
+                                        <input type="radio" id="status_produto_2_done" value="done" ng-model="status_produto_2_status" disabled>
+                                        <label for="status_produto_2_done" class="order_product__status__icon {{status_produto_2_status=='done'?'open':''}}">
+                                            <i class="icon-done"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="order_product__status_description" ng-hide="status_produto_2_status!='building'">
+                                    <p class="order_product__status_description__title">Produzindo</p>
+                                    <p class="order_product__status_description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="order_product__status_description" ng-hide="status_produto_2_status!='producing'">
+                                    <p class="order_product__status_description__title">Produzido</p>
+                                    <p class="order_product__status_description__text">Para sua seguran  ttça, estamos confirmando seu pagamento. Precisa de ajuda para escolher cor, material, acertar as dimensões corretas e resolver qualquer outra <a class="link" href="#">dúvida</a>? Conte com a <strong>nossa equipe de atendimento</strong>.</p>
+                                </div>
+                                <div class="order_product__status_description" ng-hide="status_produto_2_status!='shipping'">
+                                    <p class="order_product__status_description__title">Enviando</p>
+                                    <p class="order_product__status_description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="order_product__status_description" ng-hide="status_produto_2_status!='done'">
+                                    <p class="order_product__status_description__title">Finalizado</p>
+                                    <p class="order_product__status_description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="hidden-xs">
+    <a class="logo" href="#" title="Lojas KD - Procurou móveis encontrou aqui!">
+        <img class="center-block" src="dist/images/lojaskd.png" alt="Lojas KD - Procurou móveis encontrou aqui!">
+    </a>
+    <a class="link" href="#" title="Lojas KD - Procurou móveis encontrou aqui!">
+        LojasKD.com.br
+    </a>
+</footer>

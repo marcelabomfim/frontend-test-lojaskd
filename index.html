@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="acmktplace">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Frontend Test</title>
+    <meta name="author" content="Marcela Bomfim">
+
+    <link rel="icon" type="image/png" href="dist/images/favicon.jpg" />
+
+    <!-- EXTERNAl FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,600|Roboto:100" rel="stylesheet">
+
+    <!-- CSS FILES -->
+	<link rel="stylesheet"  type="text/css" href="dist/assets/css/main.css" media="all">
+
+</head>
+<body>
+
+    <main class="main" ng-class="{'main--logged': logged}">
+        <div class="container">
+            <!-- LOAD THE VIEWS -->
+			<div ng-view></div>
+        </div>
+    </main>
+
+    <!-- JS FILES  -->
+	<script type="text/javascript" src="dist/assets/components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="dist/assets/components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="dist/assets/js/app.js"></script>
+
+</body>
+</html>
